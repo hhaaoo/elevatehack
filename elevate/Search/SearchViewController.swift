@@ -44,8 +44,10 @@ class SearchViewController: UIViewController {
 }
 
 extension SearchViewController: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        visibleItems = allItems.filter { $0.name.lowercased().hasPrefix(string.lowercased())}
+    func textField(_ textFielod: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        var txtAfterUpdate: NSString = textField.text! as NSString
+        txtAfterUpdate = txtAfterUpdate.replacingCharacters(in: range, with: string) as NSString
+        visibleItems = allItems.filter { $0.name.lowercased().hasPrefix(txtAfterUpdate.lowercased)}
         tableView.reloadData()
         return true
     }
