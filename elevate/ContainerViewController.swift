@@ -8,7 +8,9 @@ class ContainerViewController: MMDrawerController, UINavigationControllerDelegat
 
     init() {
         leftController = OptionsTableViewController()
-        middleNavController = UINavigationController(rootViewController: OptionsTableViewController())
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateInitialViewController()
+        middleNavController = UINavigationController(rootViewController: controller!)
         super.init(nibName: nil, bundle: nil)
         leftDrawerViewController = leftController
         centerViewController = middleNavController

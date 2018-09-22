@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0584B4872156A5F800F97F6C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0584B4862156A5F800F97F6C /* MainViewController.swift */; };
 		39B7C8973F65DDAAA9700132 /* Pods_elevate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222F878C1C33BC4655E881EA /* Pods_elevate.framework */; };
 		AD13FB1A2156A43E004416D1 /* OptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13FB182156A43E004416D1 /* OptionsTableViewController.swift */; };
 		AD13FB1B2156A43E004416D1 /* OptionsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD13FB192156A43E004416D1 /* OptionsTableViewController.xib */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0584B4862156A5F800F97F6C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		222F878C1C33BC4655E881EA /* Pods_elevate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_elevate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FFA415149E0596FFB2C3268 /* Pods-elevate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elevate.release.xcconfig"; path = "Pods/Target Support Files/Pods-elevate/Pods-elevate.release.xcconfig"; sourceTree = "<group>"; };
 		A32354059B554FA0AA615103 /* Pods-elevate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elevate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-elevate/Pods-elevate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		AD897A9E2156A37B0008FD54 /* elevate */ = {
 			isa = PBXGroup;
 			children = (
+				0584B4862156A5F800F97F6C /* MainViewController.swift */,
 				AD897A9F2156A37B0008FD54 /* AppDelegate.swift */,
 				AD897AA12156A37B0008FD54 /* ContainerViewController.swift */,
 				AD13FB182156A43E004416D1 /* OptionsTableViewController.swift */,
@@ -221,6 +224,7 @@
 				AD897AA22156A37B0008FD54 /* ContainerViewController.swift in Sources */,
 				AD897AA02156A37B0008FD54 /* AppDelegate.swift in Sources */,
 				AD13FB1A2156A43E004416D1 /* OptionsTableViewController.swift in Sources */,
+				0584B4872156A5F800F97F6C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
