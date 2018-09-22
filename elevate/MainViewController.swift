@@ -83,12 +83,10 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
         
     }
     
-    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView)
-    {
-        if let annotationTitle = view.annotation?.title
-        {
-            print("User tapped on annotation with title: \(annotationTitle!)")
-        }
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        let reviewController = ReviewViewController(nibName: String(describing: ReviewViewController.self), bundle: nil)
+        self.navigationController?.pushViewController(reviewController, animated: true)
+        
     }
     
     func showStoreLocation() {

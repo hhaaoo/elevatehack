@@ -1,14 +1,9 @@
-//
-//  ReviewViewController.swift
-//  elevate
-//
-//  Created by Harry Wu on 2018-09-22.
-//  Copyright © 2018 elevatehack. All rights reserved.
-//
 
 import UIKit
 
-class ReviewViewController: UIViewController {
+class ReviewViewController: UITableViewController {
+    
+    var orders: [Order] = [Order]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,20 +11,16 @@ class ReviewViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // MARK: - Table view data source
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 0
     }
-    */
 
 }
