@@ -1,5 +1,5 @@
 //
-//  OrdersTableViewController.swift
+//  ReceiptTableViewController.swift
 //  elevate
 //
 //  Created by Richard Yu on 2018-09-22.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OrdersTableViewController: UITableViewController {
+class ReceiptTableViewController: UITableViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
