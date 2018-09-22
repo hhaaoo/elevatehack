@@ -42,6 +42,11 @@ class RootTabBarController: UITabBarController, UITabBarControllerDelegate {
         ordersController.tabBarItem.image = UIImage(named: "NavIcon_Contents")?.withRenderingMode(UIImageRenderingMode.automatic)
         ordersController.tabBarItem.selectedImage = UIImage(named: "NavIcon_Contents")?.withRenderingMode(UIImageRenderingMode.automatic)
         ordersNavController = UINavigationController(rootViewController: ordersController)
+        ordersNavController.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        ordersNavController.navigationBar.shadowImage = UIImage()
+        ordersNavController.navigationBar.isTranslucent = true
+        ordersNavController.view.backgroundColor = UIColor.clear
+        ordersNavController.navigationBar.backgroundColor = UIColor.clear
         ordersNavController.tabBarItem = ordersController.tabBarItem
     }
 
@@ -51,6 +56,11 @@ class RootTabBarController: UITabBarController, UITabBarControllerDelegate {
         settingsController.tabBarItem.image = UIImage(named: "NavIcon_Settings")?.withRenderingMode(UIImageRenderingMode.automatic)
         settingsController.tabBarItem.selectedImage = UIImage(named: "NavIcon_Settings")?.withRenderingMode(UIImageRenderingMode.automatic)
         settingsNavController = UINavigationController(rootViewController: settingsController)
+        settingsNavController.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        settingsNavController.navigationBar.shadowImage = UIImage()
+        settingsNavController.navigationBar.isTranslucent = true
+        settingsNavController.view.backgroundColor = UIColor.clear
+        settingsNavController.navigationBar.backgroundColor = UIColor.clear
         settingsNavController.tabBarItem = settingsController.tabBarItem
     }
 }

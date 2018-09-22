@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainTabBarController = RootTabBarController()
         window!.rootViewController = mainTabBarController
         window!.makeKeyAndVisible()
+        UINavigationBar.appearance().backgroundColor = .clear
+        UINavigationBar.appearance().tintColor = .white
         return true
     }
 

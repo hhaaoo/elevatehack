@@ -44,6 +44,8 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var locationButton: UIButton!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var stackView: UIStackView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -73,9 +75,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
             annotation.coordinate = CLLocationCoordinate2D(latitude: location["latitude"] as! Double, longitude: location["longitude"] as! Double)
             mapView.addAnnotation(annotation)
         }
-        
-        
-        
+
         // Ask for Authorisation from the User.
         self.locationManager.requestAlwaysAuthorization()
         
@@ -101,7 +101,8 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     @IBAction func didPressSearch() {
-        NSLog("HERE")
+        let searchController = SearchViewController(nibName: String(describing: SearchViewController.self), bundle: nil)
+        navigationController?.pushViewController(searchController, animated: true)
     }
 
     @IBAction func didPressLocation() {
