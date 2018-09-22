@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0584B4872156A5F800F97F6C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0584B4862156A5F800F97F6C /* MainViewController.swift */; };
+		05FA2C6C2156BE3E00879843 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA2C6A2156BE3E00879843 /* ReviewViewController.swift */; };
+		05FA2C6D2156BE3E00879843 /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05FA2C6B2156BE3E00879843 /* ReviewViewController.xib */; };
 		39B7C8973F65DDAAA9700132 /* Pods_elevate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222F878C1C33BC4655E881EA /* Pods_elevate.framework */; };
 		AD13FB1A2156A43E004416D1 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13FB182156A43E004416D1 /* SettingsTableViewController.swift */; };
 		AD13FB1B2156A43E004416D1 /* SettingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD13FB192156A43E004416D1 /* SettingsTableViewController.xib */; };
@@ -27,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		0584B4862156A5F800F97F6C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		05FA2C6A2156BE3E00879843 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		05FA2C6B2156BE3E00879843 /* ReviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewViewController.xib; sourceTree = "<group>"; };
 		222F878C1C33BC4655E881EA /* Pods_elevate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_elevate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FFA415149E0596FFB2C3268 /* Pods-elevate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elevate.release.xcconfig"; path = "Pods/Target Support Files/Pods-elevate/Pods-elevate.release.xcconfig"; sourceTree = "<group>"; };
 		A32354059B554FA0AA615103 /* Pods-elevate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elevate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-elevate/Pods-elevate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05FA2C672156BDA600879843 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				05FA2C6A2156BE3E00879843 /* ReviewViewController.swift */,
+				05FA2C6B2156BE3E00879843 /* ReviewViewController.xib */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
 		42127A8A3DE62F24B5338D9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +144,7 @@
 		AD897A9E2156A37B0008FD54 /* elevate */ = {
 			isa = PBXGroup;
 			children = (
+				05FA2C672156BDA600879843 /* Review */,
 				AD897A9F2156A37B0008FD54 /* AppDelegate.swift */,
 				AD897AA12156A37B0008FD54 /* RootTabBarController.swift */,
 				0584B4862156A5F800F97F6C /* MainViewController.swift */,
@@ -209,6 +223,7 @@
 				AD897AAA2156A37B0008FD54 /* LaunchScreen.storyboard in Resources */,
 				AD897AA72156A37B0008FD54 /* Assets.xcassets in Resources */,
 				AD13FB1B2156A43E004416D1 /* SettingsTableViewController.xib in Resources */,
+				05FA2C6D2156BE3E00879843 /* ReviewViewController.xib in Resources */,
 				AD7D1DE62156B67000D7E47C /* OrdersTableViewController.xib in Resources */,
 				AD7D1DF12156BBAE00D7E47C /* ReceiptTableViewController.xib in Resources */,
 				AD897AA52156A37B0008FD54 /* Main.storyboard in Resources */,
@@ -269,6 +284,7 @@
 				AD897AA02156A37B0008FD54 /* AppDelegate.swift in Sources */,
 				AD13FB1A2156A43E004416D1 /* SettingsTableViewController.swift in Sources */,
 				0584B4872156A5F800F97F6C /* MainViewController.swift in Sources */,
+				05FA2C6C2156BE3E00879843 /* ReviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
