@@ -23,5 +23,5 @@ struct Items: Codable {
 struct Shop: Codable {
     var shopId: String
     var name: String
-    var distance: String
+    var distance: Double
 }

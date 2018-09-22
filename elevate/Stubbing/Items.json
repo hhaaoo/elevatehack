@@ -2,24 +2,24 @@
 	"items": [
 		{
 			"id": "000",
-			"image": "000",
+			"image": "tp1",
 			"name": "Toothpaste",
 			"price": 1.99,
             "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 0.1
             }
 		},
 		{
 			"id": "001",
-			"image": "001",
+			"image": "tp2",
 			"name": "Colgate Toothpaste",
               "price": 2.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 0.4
               }
 		},
 		{
@@ -30,7 +30,7 @@
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 0.23
               }
 		},
 		{
@@ -41,150 +41,150 @@
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 1.5
               }
 		},
 		{
 			"id": "004",
-			"image": "004",
+			"image": "tp3",
 			"name": "Toothpaste",
               "price": 1.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 1.7
               }
 		},
 		{
 			"id": "005",
-			"image": "005",
+			"image": "tp4",
 			"name": "Toothpaste",
               "price": 1.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 1.9
               }
 		},
 		{
 			"id": "006",
-			"image": "006",
+			"image": "tp5",
 			"name": "Toothpaste",
               "price": 1.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 0.14
               }
 		},
 		{
 			"id": "007",
-			"image": "007",
+			"image": "tp6",
 			"name": "Toothpaste",
               "price": 1.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 1.4
               }
 		},
 		{
 			"id": "008",
-			"image": "008",
+			"image": "tp7",
 			"name": "Toothpaste",
               "price": 1.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 1.0
               }
 		},
 		{
 			"id": "009",
-			"image": "009",
+			"image": "tp8",
 			"name": "Toothpaste",
               "price": 1.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 1.2
               }
 		},
 		{
 			"id": "010",
 			"image": "010",
-			"name": "Toothpaste",
+			"name": "tp9",
               "price": 1.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 1.3
               }
 		},
 		{
 			"id": "011",
-			"image": "011",
+			"image": "tp10",
 			"name": "Toothpaste",
               "price": 1.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 1.4
               }
 		},
 		{
 			"id": "012",
-			"image": "012",
+			"image": "tp11",
 			"name": "Toothpaste",
               "price": 1.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 1.6
               }
 		},
 		{
 			"id": "013",
-			"image": "013",
+			"image": "tp12",
 			"name": "Toothpaste",
               "price": 1.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 1.8
               }
 		},
 		{
 			"id": "014",
-			"image": "014",
+			"image": "tp13",
 			"name": "Toothpaste",
               "price": 1.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 1.5
               }
 		},
 		{
 			"id": "015",
-			"image": "015",
+			"image": "tp14",
 			"name": "Toothpaste",
               "price": 1.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 0.5
               }
 		},
 		{
 			"id": "016",
-			"image": "016",
+			"image": "tp15",
 			"name": "Toothpaste",
               "price": 1.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 0.7
               }
 		},
 		{
@@ -195,7 +195,7 @@
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 0.8
               }
 		},
 		{
@@ -206,7 +206,7 @@
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 0.88
               }
 		},
 		{
@@ -217,7 +217,7 @@
               "shop": {
               "shopId": "000",
               "name": "Shop",
-              "distance": "500m"
+              "distance": 0.8
               }
 		}
 	]

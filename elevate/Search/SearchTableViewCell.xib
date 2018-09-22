@@ -75,6 +75,7 @@
                 <outlet property="descriptionLabel" destination="Xql-Re-748" id="xq9-hc-Kh7"/>
                 <outlet property="distanceLabel" destination="fIM-dB-fkf" id="gkc-az-UGp"/>
                 <outlet property="nameLabel" destination="DV4-QB-h6U" id="ABZ-WG-fzE"/>
+                <outlet property="photoImageView" destination="MeX-xB-VXI" id="sJ1-1V-fbS"/>
                 <outlet property="priceLabel" destination="D8P-R1-fg6" id="ltQ-LE-6xi"/>
             </connections>
             <point key="canvasLocation" x="25.5" y="129.5"/>

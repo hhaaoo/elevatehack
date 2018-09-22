@@ -12,12 +12,15 @@ class SearchTableViewCell: UITableViewCell {
 
     static let identifier = "SearchTableViewCell"
 
+    @IBOutlet var photoImageView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var priceLabel: UILabel!
     @IBOutlet var distanceLabel: UILabel!
 
     func configure(for item: Item) {
+        photoImageView.image = UIImage.init(named: item.imageName)
+        photoImageView.contentMode = .scaleAspectFit
         nameLabel.text = item.name
         descriptionLabel.text = item.description
         var mutableString: NSMutableAttributedString = NSMutableAttributedString(attributedString:
@@ -28,7 +31,7 @@ class SearchTableViewCell: UITableViewCell {
         priceLabel.attributedText = mutableString
 
         mutableString = NSMutableAttributedString(attributedString: NSAttributedString(string: "Distance: "))
-        mutableString.append(NSAttributedString(string: "\(item.shop.distance)",
+        mutableString.append(NSAttributedString(string: "\(item.shop.distance)km",
             attributes: [NSAttributedStringKey.foregroundColor: UIColor.blue,
                          NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: priceLabel.font.pointSize)]))
         distanceLabel.attributedText = mutableString

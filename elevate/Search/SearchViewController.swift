@@ -21,6 +21,7 @@ class SearchViewController: UIViewController {
         textField.becomeFirstResponder()
         textField.delegate = self
         tableView.contentInset = UIEdgeInsetsMake(45, 0, 0, 0)
+        tableView.tableFooterView = UIView()
 
         if let filepath = Bundle.main.path(forResource: "Items", ofType: "json") {
             do {
@@ -30,6 +31,8 @@ class SearchViewController: UIViewController {
                 let decoder = JSONDecoder()
                 let items = try! decoder.decode(Items.self, from: jsonData)
                 allItems = items.items
+                visibleItems = allItems
+                visibleItems.sort(by: {$0.shop.distance < $1.shop.distance})
             } catch {
                 // contents could not be loaded
             }
@@ -39,6 +42,7 @@ class SearchViewController: UIViewController {
 
         tableView.register(UINib(nibName: SearchTableViewCell.identifier, bundle: nil),
                            forCellReuseIdentifier: SearchTableViewCell.identifier)
+        tableView.reloadData()
     }
 
 }
@@ -48,6 +52,7 @@ extension SearchViewController: UITextFieldDelegate {
         var txtAfterUpdate: NSString = textField.text! as NSString
         txtAfterUpdate = txtAfterUpdate.replacingCharacters(in: range, with: string) as NSString
         visibleItems = allItems.filter { $0.name.lowercased().hasPrefix(txtAfterUpdate.lowercased)}
+        visibleItems.sort(by: {$0.shop.distance < $1.shop.distance})
         tableView.reloadData()
         return true
     }
