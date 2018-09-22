@@ -14,15 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let mainViewController = ContainerViewController()
-        let navController = UINavigationController(rootViewController: mainViewController)
-        navController.setNavigationBarHidden(true, animated: false)
-        self.window!.rootViewController = navController
-        window!.rootViewController = navController
-        navController.navigationBar.barTintColor = UIColor.clear
-        navController.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navController.navigationBar.isTranslucent = true
-
+        let mainTabBarController = RootTabBarController()
+        window!.rootViewController = mainTabBarController
         window!.makeKeyAndVisible()
         return true
     }

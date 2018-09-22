@@ -1,31 +1,16 @@
 PODS:
-  - MMDrawerController (0.6.0):
-    - MMDrawerController/Core (= 0.6.0)
-    - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
-    - MMDrawerController/MMDrawerVisualStates (= 0.6.0)
-    - MMDrawerController/Subclass (= 0.6.0)
-  - MMDrawerController/Core (0.6.0)
-  - MMDrawerController/MMDrawerBarButtonItem (0.6.0):
-    - MMDrawerController/Core
-  - MMDrawerController/MMDrawerVisualStates (0.6.0):
-    - MMDrawerController/Core
-  - MMDrawerController/Subclass (0.6.0):
-    - MMDrawerController/Core
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
-  - MMDrawerController
   - SVProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - MMDrawerController
     - SVProgressHUD
 
 SPEC CHECKSUMS:
-  MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: cd11483ef037e04742266b0a7c2a88a53de5733b
+PODFILE CHECKSUM: e104231476605badbea233ea34bbdb74dfc55e1e
 
 COCOAPODS: 1.5.3

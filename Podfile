@@ -5,5 +5,4 @@ target 'elevate' do
     use_frameworks!
 
     pod 'SVProgressHUD'
-    pod 'MMDrawerController'
 end

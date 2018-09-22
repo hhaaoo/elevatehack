@@ -1,5 +1,5 @@
 //
-//  OptionsTableViewController.swift
+//  OrdersTableViewController.swift
 //  elevate
 //
 //  Created by Richard Yu on 2018-09-22.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OptionsTableViewController: UITableViewController {
+class OrdersTableViewController: UITableViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()

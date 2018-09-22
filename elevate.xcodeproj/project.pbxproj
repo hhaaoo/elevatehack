@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		0584B4872156A5F800F97F6C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0584B4862156A5F800F97F6C /* MainViewController.swift */; };
 		39B7C8973F65DDAAA9700132 /* Pods_elevate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222F878C1C33BC4655E881EA /* Pods_elevate.framework */; };
-		AD13FB1A2156A43E004416D1 /* OptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13FB182156A43E004416D1 /* OptionsTableViewController.swift */; };
-		AD13FB1B2156A43E004416D1 /* OptionsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD13FB192156A43E004416D1 /* OptionsTableViewController.xib */; };
-		AD7D1DE02156A4D700D7E47C /* MMDrawerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7D1DDF2156A4D700D7E47C /* MMDrawerController.framework */; };
+		AD13FB1A2156A43E004416D1 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13FB182156A43E004416D1 /* SettingsTableViewController.swift */; };
+		AD13FB1B2156A43E004416D1 /* SettingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD13FB192156A43E004416D1 /* SettingsTableViewController.xib */; };
 		AD7D1DE22156A4D700D7E47C /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7D1DE12156A4D700D7E47C /* SVProgressHUD.framework */; };
+		AD7D1DE52156B67000D7E47C /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1DE32156B67000D7E47C /* OrdersTableViewController.swift */; };
+		AD7D1DE62156B67000D7E47C /* OrdersTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7D1DE42156B67000D7E47C /* OrdersTableViewController.xib */; };
 		AD897AA02156A37B0008FD54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD897A9F2156A37B0008FD54 /* AppDelegate.swift */; };
-		AD897AA22156A37B0008FD54 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD897AA12156A37B0008FD54 /* ContainerViewController.swift */; };
+		AD897AA22156A37B0008FD54 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD897AA12156A37B0008FD54 /* RootTabBarController.swift */; };
 		AD897AA52156A37B0008FD54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD897AA32156A37B0008FD54 /* Main.storyboard */; };
 		AD897AA72156A37B0008FD54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD897AA62156A37B0008FD54 /* Assets.xcassets */; };
 		AD897AAA2156A37B0008FD54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD897AA82156A37B0008FD54 /* LaunchScreen.storyboard */; };
@@ -25,13 +26,15 @@
 		222F878C1C33BC4655E881EA /* Pods_elevate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_elevate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FFA415149E0596FFB2C3268 /* Pods-elevate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elevate.release.xcconfig"; path = "Pods/Target Support Files/Pods-elevate/Pods-elevate.release.xcconfig"; sourceTree = "<group>"; };
 		A32354059B554FA0AA615103 /* Pods-elevate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elevate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-elevate/Pods-elevate.debug.xcconfig"; sourceTree = "<group>"; };
-		AD13FB182156A43E004416D1 /* OptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewController.swift; sourceTree = "<group>"; };
-		AD13FB192156A43E004416D1 /* OptionsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionsTableViewController.xib; sourceTree = "<group>"; };
+		AD13FB182156A43E004416D1 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		AD13FB192156A43E004416D1 /* SettingsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewController.xib; sourceTree = "<group>"; };
 		AD7D1DDF2156A4D700D7E47C /* MMDrawerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MMDrawerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD7D1DE12156A4D700D7E47C /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD7D1DE32156B67000D7E47C /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
+		AD7D1DE42156B67000D7E47C /* OrdersTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrdersTableViewController.xib; sourceTree = "<group>"; };
 		AD897A9C2156A37B0008FD54 /* elevate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elevate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD897A9F2156A37B0008FD54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD897AA12156A37B0008FD54 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		AD897AA12156A37B0008FD54 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		AD897AA42156A37B0008FD54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD897AA62156A37B0008FD54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD897AA92156A37B0008FD54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,7 +46,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD7D1DE02156A4D700D7E47C /* MMDrawerController.framework in Frameworks */,
 				AD7D1DE22156A4D700D7E47C /* SVProgressHUD.framework in Frameworks */,
 				39B7C8973F65DDAAA9700132 /* Pods_elevate.framework in Frameworks */,
 			);
@@ -92,11 +94,13 @@
 		AD897A9E2156A37B0008FD54 /* elevate */ = {
 			isa = PBXGroup;
 			children = (
-				0584B4862156A5F800F97F6C /* MainViewController.swift */,
 				AD897A9F2156A37B0008FD54 /* AppDelegate.swift */,
-				AD897AA12156A37B0008FD54 /* ContainerViewController.swift */,
-				AD13FB182156A43E004416D1 /* OptionsTableViewController.swift */,
-				AD13FB192156A43E004416D1 /* OptionsTableViewController.xib */,
+				AD897AA12156A37B0008FD54 /* RootTabBarController.swift */,
+				0584B4862156A5F800F97F6C /* MainViewController.swift */,
+				AD7D1DE32156B67000D7E47C /* OrdersTableViewController.swift */,
+				AD7D1DE42156B67000D7E47C /* OrdersTableViewController.xib */,
+				AD13FB182156A43E004416D1 /* SettingsTableViewController.swift */,
+				AD13FB192156A43E004416D1 /* SettingsTableViewController.xib */,
 				AD897AA32156A37B0008FD54 /* Main.storyboard */,
 				AD897AA62156A37B0008FD54 /* Assets.xcassets */,
 				AD897AA82156A37B0008FD54 /* LaunchScreen.storyboard */,
@@ -168,7 +172,8 @@
 			files = (
 				AD897AAA2156A37B0008FD54 /* LaunchScreen.storyboard in Resources */,
 				AD897AA72156A37B0008FD54 /* Assets.xcassets in Resources */,
-				AD13FB1B2156A43E004416D1 /* OptionsTableViewController.xib in Resources */,
+				AD13FB1B2156A43E004416D1 /* SettingsTableViewController.xib in Resources */,
+				AD7D1DE62156B67000D7E47C /* OrdersTableViewController.xib in Resources */,
 				AD897AA52156A37B0008FD54 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,12 +206,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-elevate/Pods-elevate-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MMDrawerController/MMDrawerController.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMDrawerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,9 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD897AA22156A37B0008FD54 /* ContainerViewController.swift in Sources */,
+				AD7D1DE52156B67000D7E47C /* OrdersTableViewController.swift in Sources */,
+				AD897AA22156A37B0008FD54 /* RootTabBarController.swift in Sources */,
 				AD897AA02156A37B0008FD54 /* AppDelegate.swift in Sources */,
-				AD13FB1A2156A43E004416D1 /* OptionsTableViewController.swift in Sources */,
+				AD13FB1A2156A43E004416D1 /* SettingsTableViewController.swift in Sources */,
 				0584B4872156A5F800F97F6C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
