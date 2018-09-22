@@ -24,16 +24,21 @@ class RootTabBarController: UITabBarController, UITabBarControllerDelegate {
     private func setupHomeViewController() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let homeController = storyboard.instantiateInitialViewController()
-        homeController?.title = "HOME"
+        homeController?.tabBarItem.title = "HOME"
         homeController?.tabBarItem.image = UIImage(named: "NavIcon_Home")?.withRenderingMode(UIImageRenderingMode.automatic)
         homeController?.tabBarItem.selectedImage = UIImage(named: "NavIcon_Home")?.withRenderingMode(UIImageRenderingMode.automatic)
         homeNavController = UINavigationController(rootViewController: homeController!)
+        homeNavController.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        homeNavController.navigationBar.shadowImage = UIImage()
+        homeNavController.navigationBar.isTranslucent = true
+        homeNavController.view.backgroundColor = UIColor.clear
+        homeNavController.navigationBar.backgroundColor = UIColor.clear
         homeNavController.tabBarItem = homeController?.tabBarItem
     }
 
     private func setupOrdersViewController() {
         let ordersController = OrdersTableViewController(nibName: String(describing: OrdersTableViewController.self), bundle: nil)
-        ordersController.title = "ORDERS"
+        ordersController.tabBarItem.title = "ORDERS"
         ordersController.tabBarItem.image = UIImage(named: "NavIcon_Contents")?.withRenderingMode(UIImageRenderingMode.automatic)
         ordersController.tabBarItem.selectedImage = UIImage(named: "NavIcon_Contents")?.withRenderingMode(UIImageRenderingMode.automatic)
         ordersNavController = UINavigationController(rootViewController: ordersController)
@@ -42,7 +47,7 @@ class RootTabBarController: UITabBarController, UITabBarControllerDelegate {
 
     private func setupSettingsViewController() {
         let settingsController = SettingsTableViewController(nibName: String(describing: SettingsTableViewController.self), bundle: nil)
-        settingsController.title = "SETTINGS"
+        settingsController.tabBarItem.title = "SETTINGS"
         settingsController.tabBarItem.image = UIImage(named: "NavIcon_Settings")?.withRenderingMode(UIImageRenderingMode.automatic)
         settingsController.tabBarItem.selectedImage = UIImage(named: "NavIcon_Settings")?.withRenderingMode(UIImageRenderingMode.automatic)
         settingsNavController = UINavigationController(rootViewController: settingsController)

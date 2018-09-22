@@ -39,13 +39,14 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
         ["title": "Local Store 2", "latitude": 43.6540, "longitude": -79.3700],
         ["title": "Local Store 1",     "latitude": 43.6523, "longitude": -79.3830]
     ]
-    
+
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var locationButton: UIButton!
+    @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "HOME"
-        // Do any additional setup after loading the view, typically from a nib.
-        
+
         // Ask for Authorisation from the User.
         self.locationManager.requestAlwaysAuthorization()
         
@@ -80,7 +81,8 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
         
         // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
-        
+
+        searchButton.layer.cornerRadius = 5
     }
     
     func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView)
@@ -100,12 +102,13 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
         print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func didPressSearch() {
+        NSLog("HERE")
     }
 
-
+    @IBAction func didPressLocation() {
+        NSLog("HERE")
+    }
 }
 
 extension MainViewController: MKMapViewDelegate {
