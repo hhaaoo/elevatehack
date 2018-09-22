@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 final class CustomerLocationAnnotation: NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
@@ -23,28 +24,27 @@ final class CustomerLocationAnnotation: NSObject, MKAnnotation {
     }
     
     var region: MKCoordinateRegion {
-        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
         return MKCoordinateRegion(center: coordinate, span: span)
     }
 
     
 }
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
-
+    
+    let locations = [
+        ["title": "Local Store 3",    "latitude": 43.6520, "longitude": -79.3900],
+        ["title": "Local Store 2", "latitude": 43.6540, "longitude": -79.3700],
+        ["title": "Local Store 1",     "latitude": 43.6523, "longitude": -79.3830]
+    ]
+    
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "HOME"
         // Do any additional setup after loading the view, typically from a nib.
-        mapView.register(MKMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
-        
-        let customerCoord = CLLocationCoordinate2D(latitude: 43.6532, longitude: -79.3832)
-        
-        let customerAnnotation = CustomerLocationAnnotation(coordinate: customerCoord, title: "Customer", subTitle: "Location")
-        mapView.addAnnotation(customerAnnotation)
-        mapView.setRegion(customerAnnotation.region, animated: true)
         
         // Ask for Authorisation from the User.
         self.locationManager.requestAlwaysAuthorization()
@@ -52,6 +52,52 @@ class MainViewController: UIViewController {
         // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
         
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
+        
+        mapView.register(MKMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        
+        let customerCoord = CLLocationCoordinate2D(latitude: 43.6558, longitude: -79.3866)
+        
+        let customerAnnotation = CustomerLocationAnnotation(coordinate: customerCoord, title: "Customer", subTitle: "Location")
+        mapView.addAnnotation(customerAnnotation)
+        mapView.setRegion(customerAnnotation.region, animated: true)
+        
+        for location in locations {
+            let annotation = MKPointAnnotation()
+            annotation.title = location["title"] as? String
+            annotation.coordinate = CLLocationCoordinate2D(latitude: location["latitude"] as! Double, longitude: location["longitude"] as! Double)
+            mapView.addAnnotation(annotation)
+        }
+        
+        
+        
+        // Ask for Authorisation from the User.
+        self.locationManager.requestAlwaysAuthorization()
+        
+        // For use in foreground
+        self.locationManager.requestWhenInUseAuthorization()
+        
+    }
+    
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView)
+    {
+        if let annotationTitle = view.annotation?.title
+        {
+            print("User tapped on annotation with title: \(annotationTitle!)")
+        }
+    }
+    
+    func showStoreLocation() {
+        
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
 
     override func didReceiveMemoryWarning() {
