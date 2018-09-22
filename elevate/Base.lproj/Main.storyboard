@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yh1-Hl-r0Z">
-                                <rect key="frame" x="0.0" y="155" width="414" height="481"/>
+                                <rect key="frame" x="0.0" y="155" width="414" height="446"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="gle-TI-I7V"/>
                                 </connections>
@@ -77,7 +77,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yh1-Hl-r0Z" secondAttribute="trailing" id="4JT-Hu-Zj5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9eZ-8B-GBG" secondAttribute="bottom" id="Cuj-Pn-zNM"/>
                             <constraint firstItem="DRJ-RY-3Gw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DfD-lR-Amf"/>
-                            <constraint firstItem="9eZ-8B-GBG" firstAttribute="top" secondItem="yh1-Hl-r0Z" secondAttribute="bottom" id="GBb-l1-tPV"/>
                             <constraint firstItem="O0Z-pI-pJx" firstAttribute="top" secondItem="sZx-ip-DkI" secondAttribute="bottom" id="GwM-Kn-erU"/>
                             <constraint firstItem="e3h-l4-lNC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NJd-In-G6f"/>
                             <constraint firstItem="9eZ-8B-GBG" firstAttribute="top" secondItem="RAl-SO-hSq" secondAttribute="bottom" constant="20" id="NVg-gD-049"/>
@@ -96,6 +95,7 @@
                             <constraint firstItem="O0Z-pI-pJx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rxH-CE-S9W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e3h-l4-lNC" secondAttribute="trailing" id="tAl-EH-ez9"/>
                             <constraint firstItem="RAl-SO-hSq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wD6-bO-Fbt"/>
+                            <constraint firstItem="DRJ-RY-3Gw" firstAttribute="top" secondItem="yh1-Hl-r0Z" secondAttribute="bottom" constant="-45" id="xjv-rh-33E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
