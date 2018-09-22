@@ -23,6 +23,9 @@
 		AD7D1DF52156D0DE00D7E47C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1DF32156D0DE00D7E47C /* SearchViewController.swift */; };
 		AD7D1DF62156D0DE00D7E47C /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7D1DF42156D0DE00D7E47C /* SearchViewController.xib */; };
 		AD7D1DF92156D77200D7E47C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1DF82156D77200D7E47C /* Item.swift */; };
+		AD7D1DFC2156E2AF00D7E47C /* Items.json in Resources */ = {isa = PBXBuildFile; fileRef = AD7D1DFB2156E2AF00D7E47C /* Items.json */; };
+		AD7D1DFF2156E77000D7E47C /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1DFD2156E77000D7E47C /* SearchTableViewCell.swift */; };
+		AD7D1E002156E77000D7E47C /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7D1DFE2156E77000D7E47C /* SearchTableViewCell.xib */; };
 		AD897AA02156A37B0008FD54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD897A9F2156A37B0008FD54 /* AppDelegate.swift */; };
 		AD897AA22156A37B0008FD54 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD897AA12156A37B0008FD54 /* RootTabBarController.swift */; };
 		AD897AA52156A37B0008FD54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD897AA32156A37B0008FD54 /* Main.storyboard */; };
@@ -50,6 +53,9 @@
 		AD7D1DF32156D0DE00D7E47C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		AD7D1DF42156D0DE00D7E47C /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		AD7D1DF82156D77200D7E47C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		AD7D1DFB2156E2AF00D7E47C /* Items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Items.json; sourceTree = "<group>"; };
+		AD7D1DFD2156E77000D7E47C /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		AD7D1DFE2156E77000D7E47C /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		AD897A9C2156A37B0008FD54 /* elevate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elevate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD897A9F2156A37B0008FD54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD897AA12156A37B0008FD54 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
@@ -134,9 +140,19 @@
 			children = (
 				AD7D1DF32156D0DE00D7E47C /* SearchViewController.swift */,
 				AD7D1DF42156D0DE00D7E47C /* SearchViewController.xib */,
+				AD7D1DFD2156E77000D7E47C /* SearchTableViewCell.swift */,
+				AD7D1DFE2156E77000D7E47C /* SearchTableViewCell.xib */,
 				AD7D1DF82156D77200D7E47C /* Item.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		AD7D1DFA2156E07300D7E47C /* Stubbing */ = {
+			isa = PBXGroup;
+			children = (
+				AD7D1DFB2156E2AF00D7E47C /* Items.json */,
+			);
+			path = Stubbing;
 			sourceTree = "<group>";
 		};
 		AD897A932156A37B0008FD54 = {
@@ -169,6 +185,7 @@
 				AD7D1DF22156BBB400D7E47C /* Receipt */,
 				05FA2C672156BDA600879843 /* Review */,
 				AD7D1DE82156BA6100D7E47C /* Settings */,
+				AD7D1DFA2156E07300D7E47C /* Stubbing */,
 				AD897AA62156A37B0008FD54 /* Assets.xcassets */,
 				AD897AA82156A37B0008FD54 /* LaunchScreen.storyboard */,
 				AD897AAB2156A37B0008FD54 /* Info.plist */,
@@ -245,6 +262,8 @@
 				AD7D1DF12156BBAE00D7E47C /* ReceiptTableViewController.xib in Resources */,
 				AD7D1DF62156D0DE00D7E47C /* SearchViewController.xib in Resources */,
 				AD897AA52156A37B0008FD54 /* Main.storyboard in Resources */,
+				AD7D1DFC2156E2AF00D7E47C /* Items.json in Resources */,
+				AD7D1E002156E77000D7E47C /* SearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +322,7 @@
 				AD7D1DF92156D77200D7E47C /* Item.swift in Sources */,
 				AD897AA02156A37B0008FD54 /* AppDelegate.swift in Sources */,
 				AD13FB1A2156A43E004416D1 /* SettingsTableViewController.swift in Sources */,
+				AD7D1DFF2156E77000D7E47C /* SearchTableViewCell.swift in Sources */,
 				0584B4872156A5F800F97F6C /* MainViewController.swift in Sources */,
 				05FA2C6C2156BE3E00879843 /* ReviewViewController.swift in Sources */,
 			);
