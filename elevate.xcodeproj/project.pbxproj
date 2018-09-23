@@ -32,6 +32,10 @@
 		AD7D1E0D2157188A00D7E47C /* OrdersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1E0C2157188A00D7E47C /* OrdersManager.swift */; };
 		AD7D1E1021571F5D00D7E47C /* ReceiptTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1E0E21571F5D00D7E47C /* ReceiptTableViewCell.swift */; };
 		AD7D1E1121571F5D00D7E47C /* ReceiptTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7D1E0F21571F5D00D7E47C /* ReceiptTableViewCell.xib */; };
+		AD7D1E1921573D9E00D7E47C /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1E1721573D9E00D7E47C /* CheckoutViewController.swift */; };
+		AD7D1E1A21573D9E00D7E47C /* CheckoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7D1E1821573D9E00D7E47C /* CheckoutViewController.xib */; };
+		AD7D1E1D2157495200D7E47C /* CheckoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1E1B2157495200D7E47C /* CheckoutTableViewCell.swift */; };
+		AD7D1E1E2157495200D7E47C /* CheckoutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7D1E1C2157495200D7E47C /* CheckoutTableViewCell.xib */; };
 		AD897AA02156A37B0008FD54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD897A9F2156A37B0008FD54 /* AppDelegate.swift */; };
 		AD897AA22156A37B0008FD54 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD897AA12156A37B0008FD54 /* RootTabBarController.swift */; };
 		AD897AA52156A37B0008FD54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD897AA32156A37B0008FD54 /* Main.storyboard */; };
@@ -68,6 +72,10 @@
 		AD7D1E0C2157188A00D7E47C /* OrdersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersManager.swift; sourceTree = "<group>"; };
 		AD7D1E0E21571F5D00D7E47C /* ReceiptTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptTableViewCell.swift; sourceTree = "<group>"; };
 		AD7D1E0F21571F5D00D7E47C /* ReceiptTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiptTableViewCell.xib; sourceTree = "<group>"; };
+		AD7D1E1721573D9E00D7E47C /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		AD7D1E1821573D9E00D7E47C /* CheckoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckoutViewController.xib; sourceTree = "<group>"; };
+		AD7D1E1B2157495200D7E47C /* CheckoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewCell.swift; sourceTree = "<group>"; };
+		AD7D1E1C2157495200D7E47C /* CheckoutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckoutTableViewCell.xib; sourceTree = "<group>"; };
 		AD897A9C2156A37B0008FD54 /* elevate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elevate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD897A9F2156A37B0008FD54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD897AA12156A37B0008FD54 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
@@ -178,6 +186,17 @@
 			path = Details;
 			sourceTree = "<group>";
 		};
+		AD7D1E1221573C3D00D7E47C /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				AD7D1E1721573D9E00D7E47C /* CheckoutViewController.swift */,
+				AD7D1E1821573D9E00D7E47C /* CheckoutViewController.xib */,
+				AD7D1E1B2157495200D7E47C /* CheckoutTableViewCell.swift */,
+				AD7D1E1C2157495200D7E47C /* CheckoutTableViewCell.xib */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
 		AD897A932156A37B0008FD54 = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +224,7 @@
 				0584B4862156A5F800F97F6C /* MainViewController.swift */,
 				AD897AA32156A37B0008FD54 /* Main.storyboard */,
 				AD7D1E0C2157188A00D7E47C /* OrdersManager.swift */,
+				AD7D1E1221573C3D00D7E47C /* Checkout */,
 				AD7D1E012156F83700D7E47C /* Details */,
 				AD7D1DF72156D0E200D7E47C /* Search */,
 				AD7D1DE72156BA5400D7E47C /* Orders */,
@@ -288,6 +308,8 @@
 				AD7D1DE62156B67000D7E47C /* OrdersTableViewController.xib in Resources */,
 				AD7D1E052156F85D00D7E47C /* DetailsViewController.xib in Resources */,
 				AD7D1DF62156D0DE00D7E47C /* SearchViewController.xib in Resources */,
+				AD7D1E1A21573D9E00D7E47C /* CheckoutViewController.xib in Resources */,
+				AD7D1E1E2157495200D7E47C /* CheckoutTableViewCell.xib in Resources */,
 				AD897AA52156A37B0008FD54 /* Main.storyboard in Resources */,
 				AD7D1DFC2156E2AF00D7E47C /* Items.json in Resources */,
 				AD7D1E002156E77000D7E47C /* SearchTableViewCell.xib in Resources */,
@@ -350,8 +372,10 @@
 				AD897AA22156A37B0008FD54 /* RootTabBarController.swift in Sources */,
 				AD7D1DF92156D77200D7E47C /* Item.swift in Sources */,
 				AD897AA02156A37B0008FD54 /* AppDelegate.swift in Sources */,
+				AD7D1E1D2157495200D7E47C /* CheckoutTableViewCell.swift in Sources */,
 				AD13FB1A2156A43E004416D1 /* SettingsTableViewController.swift in Sources */,
 				AD7D1DFF2156E77000D7E47C /* SearchTableViewCell.swift in Sources */,
+				AD7D1E1921573D9E00D7E47C /* CheckoutViewController.swift in Sources */,
 				0584B4872156A5F800F97F6C /* MainViewController.swift in Sources */,
 				AD7D1E0A215713FA00D7E47C /* ReceiptViewController.swift in Sources */,
 				AD7D1E042156F85D00D7E47C /* DetailsViewController.swift in Sources */,

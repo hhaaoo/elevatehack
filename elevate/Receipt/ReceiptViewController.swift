@@ -15,7 +15,6 @@ class ReceiptViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(dismissAll))
         tableView.contentInset = UIEdgeInsetsMake(45, 0, 0, 0)
         tableView.tableFooterView = UIView()
         tableView.register(UINib(nibName: ReceiptTableViewCell.identifier, bundle: nil),
@@ -24,12 +23,18 @@ class ReceiptViewController: UIViewController {
         checkoutButton.layer.cornerRadius = 5
     }
 
-    @objc func dismissAll() {
-        dismiss(animated: true, completion: nil)
-    }
-
     @IBAction func checkout() {
-        
+        let checkoutController = CheckoutViewController(nibName: String(describing: CheckoutViewController.self), bundle: nil)
+        let navController = UINavigationController(rootViewController: checkoutController)
+        navController.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navController.navigationBar.shadowImage = UIImage()
+        navController.navigationBar.isTranslucent = true
+        navController.navigationBar.backgroundColor = UIColor.clear
+        navigationController?.present(navController, animated: true, completion: { [weak self] in
+            if let firstController = self?.navigationController?.viewControllers.first {
+                self?.navigationController?.viewControllers = [firstController]
+            }
+        })
     }
 }
 

@@ -43,4 +43,14 @@ class OrdersManager {
             quantities.remove(at: index)
         }
     }
+
+    func total() -> Double {
+        var total = 0.0
+        for i in 0..<items.count {
+            let item = items[i]
+            let quantity = quantities[i]
+            total += item.price * Double(quantity)
+        }
+        return total
+    }
 }

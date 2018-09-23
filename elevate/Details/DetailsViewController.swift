@@ -56,16 +56,7 @@ class DetailsViewController: UIViewController {
         let quantity = Int(quantityTextField.text!) ?? 1
         OrdersManager.shared.add(shop: item.shop, item: item, quantity: quantity)
         let receiptController = ReceiptViewController(nibName: String(describing: ReceiptViewController.self), bundle: nil)
-        let navController = UINavigationController(rootViewController: receiptController)
-        navController.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        navController.navigationBar.shadowImage = UIImage()
-        navController.navigationBar.isTranslucent = true
-        navController.navigationBar.backgroundColor = UIColor.clear
-        navigationController?.present(navController, animated: true, completion: { [weak self] in
-            if let firstController = self?.navigationController?.viewControllers.first {
-                self?.navigationController?.viewControllers = [firstController]
-            }
-        })
+        navigationController?.pushViewController(receiptController, animated: true)
     }
 
     func updateTotalPrice(_ quantity: Double?) {
