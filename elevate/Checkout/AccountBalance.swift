@@ -36,3 +36,24 @@ struct CreditCardAccount: Codable {
         case currency
     }
 }
+
+struct TransferRequest: Codable {
+    var receipt: Receipt
+
+    enum CodingKeys: String, CodingKey {
+        case receipt = "result"
+    }
+}
+
+struct Receipt: Codable {
+    var amount: Double
+    var creditTransactionID: String
+    var currency: String
+    var debitTransactionID: String
+    var fromAccountId: String
+    var receiptId: String
+    var receipt: String
+    var toAccountId: String
+    var transactionTime: String
+    var transactionType: String
+}

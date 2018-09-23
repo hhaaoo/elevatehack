@@ -17,7 +17,6 @@
 		AD7D1DE52156B67000D7E47C /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1DE32156B67000D7E47C /* OrdersTableViewController.swift */; };
 		AD7D1DE62156B67000D7E47C /* OrdersTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7D1DE42156B67000D7E47C /* OrdersTableViewController.xib */; };
 		AD7D1DEA2156BAD600D7E47C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1DE92156BAD600D7E47C /* Order.swift */; };
-		AD7D1DED2156BB5C00D7E47C /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1DEC2156BB5C00D7E47C /* Receipt.swift */; };
 		AD7D1DF52156D0DE00D7E47C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1DF32156D0DE00D7E47C /* SearchViewController.swift */; };
 		AD7D1DF62156D0DE00D7E47C /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7D1DF42156D0DE00D7E47C /* SearchViewController.xib */; };
 		AD7D1DF92156D77200D7E47C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1DF82156D77200D7E47C /* Item.swift */; };
@@ -59,7 +58,6 @@
 		AD7D1DE32156B67000D7E47C /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
 		AD7D1DE42156B67000D7E47C /* OrdersTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrdersTableViewController.xib; sourceTree = "<group>"; };
 		AD7D1DE92156BAD600D7E47C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
-		AD7D1DEC2156BB5C00D7E47C /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
 		AD7D1DF32156D0DE00D7E47C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		AD7D1DF42156D0DE00D7E47C /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		AD7D1DF82156D77200D7E47C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 				AD7D1E09215713FA00D7E47C /* ReceiptViewController.xib */,
 				AD7D1E0E21571F5D00D7E47C /* ReceiptTableViewCell.swift */,
 				AD7D1E0F21571F5D00D7E47C /* ReceiptTableViewCell.xib */,
-				AD7D1DEC2156BB5C00D7E47C /* Receipt.swift */,
 			);
 			path = Receipt;
 			sourceTree = "<group>";
@@ -375,7 +372,6 @@
 				AD7D1DEA2156BAD600D7E47C /* Order.swift in Sources */,
 				AD7D1DE52156B67000D7E47C /* OrdersTableViewController.swift in Sources */,
 				AD7D1E1021571F5D00D7E47C /* ReceiptTableViewCell.swift in Sources */,
-				AD7D1DED2156BB5C00D7E47C /* Receipt.swift in Sources */,
 				AD897AA22156A37B0008FD54 /* RootTabBarController.swift in Sources */,
 				AD7D1DF92156D77200D7E47C /* Item.swift in Sources */,
 				AD897AA02156A37B0008FD54 /* AppDelegate.swift in Sources */,

@@ -64,15 +64,24 @@ class CheckoutViewController: UIViewController {
             present(alertView, animated: true, completion: nil)
             return
         }
-//        SVProgressHUD.show()
-        // Make a trade!
-        let alertView = UIAlertController(title: "Success!", message: "Please allow up to 15 minutes for vendor to respond.", preferredStyle: .alert)
-        alertView.addAction(UIAlertAction(title: "OK!", style: .default, handler: { [weak self] (_) in
-            self?.dismiss(animated: true, completion: {
-                OrdersManager.shared.reset()
-            })
-        }))
-        present(alertView, animated: true, completion: nil)
+        SVProgressHUD.show()
+        NetworkManager.shared.makeTransfer(amount: OrdersManager.shared.total()) { [weak self] (receipt, error) in
+            SVProgressHUD.dismiss()
+            if let error = error {
+                NSLog("Error: \(error.localizedDescription)")
+                let alertView = UIAlertController(title: "Uh-Oh!!", message: "Something went wrong.", preferredStyle: .alert)
+                alertView.addAction(UIAlertAction(title: "OK!", style: .default, handler: nil))
+                self?.present(alertView, animated: true, completion: nil)
+                return
+            }
+            let alertView = UIAlertController(title: "Success!", message: "Please allow up to 15 minutes for vendor to respond.", preferredStyle: .alert)
+            alertView.addAction(UIAlertAction(title: "OK!", style: .default, handler: { [weak self] (_) in
+                self?.dismiss(animated: true, completion: {
+                    OrdersManager.shared.reset()
+                })
+            }))
+            self?.present(alertView, animated: true, completion: nil)
+        }
     }
 
     @IBAction func changeCardPressed() {
