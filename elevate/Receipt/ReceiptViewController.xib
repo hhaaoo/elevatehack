@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReceiptViewController" customModule="elevate" customModuleProvider="target">
             <connections>
+                <outlet property="checkoutButton" destination="L78-d8-UTr" id="drp-91-GRc"/>
                 <outlet property="tableView" destination="lXb-EW-e3r" id="FuJ-W9-2k0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,10 +22,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="45" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lXb-EW-e3r">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="lXb-EW-e3r">
                     <rect key="frame" x="0.0" y="155" width="375" height="512"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <inset key="scrollIndicatorInsets" minX="0.0" minY="45" maxX="0.0" maxY="0.0"/>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="7Yl-ml-La1"/>
                         <outlet property="delegate" destination="-1" id="7Ih-Zg-O2C"/>
@@ -37,22 +39,38 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Cart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2R-xq-g91">
-                    <rect key="frame" x="16" y="20" width="72.5" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <rect key="frame" x="16" y="20" width="77.5" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L78-d8-UTr">
+                    <rect key="frame" x="24" y="603" width="327" height="40"/>
+                    <color key="backgroundColor" red="0.3411764706" green="0.77647058820000003" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="5rO-fm-jFl"/>
+                    </constraints>
+                    <state key="normal" title="Proceed to Checkout">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="checkout" destination="-1" eventType="touchUpInside" id="Ij9-rA-1rD"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="lXb-EW-e3r" secondAttribute="bottom" id="6Vn-In-fwZ"/>
+                <constraint firstAttribute="bottom" secondItem="lXb-EW-e3r" secondAttribute="bottom" id="6Vn-In-fwZ"/>
                 <constraint firstItem="B2R-xq-g91" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="79H-2i-Nq4"/>
                 <constraint firstItem="C1Q-9T-Rly" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BBg-Hk-BU9"/>
                 <constraint firstItem="lXb-EW-e3r" firstAttribute="top" secondItem="C1Q-9T-Rly" secondAttribute="bottom" constant="-45" id="L0a-7z-DyR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="C1Q-9T-Rly" secondAttribute="trailing" id="RcE-1B-S16"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="L78-d8-UTr" secondAttribute="trailing" constant="24" id="c9Z-d0-1SM"/>
+                <constraint firstAttribute="bottom" secondItem="L78-d8-UTr" secondAttribute="bottom" constant="24" id="ed9-pG-fJC"/>
                 <constraint firstItem="C1Q-9T-Rly" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hu1-S1-LLp"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lXb-EW-e3r" secondAttribute="trailing" id="mqJ-6D-gva"/>
                 <constraint firstItem="B2R-xq-g91" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="nUZ-6m-nme"/>
+                <constraint firstItem="L78-d8-UTr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="q0y-cb-O1O"/>
                 <constraint firstItem="lXb-EW-e3r" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="z8b-3s-4wB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

@@ -11,6 +11,7 @@ import UIKit
 class ReceiptViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var checkoutButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +21,16 @@ class ReceiptViewController: UIViewController {
         tableView.register(UINib(nibName: ReceiptTableViewCell.identifier, bundle: nil),
                            forCellReuseIdentifier: ReceiptTableViewCell.identifier)
         tableView.reloadData()
+        checkoutButton.layer.cornerRadius = 5
     }
 
     @objc func dismissAll() {
         dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func checkout() {
+        
+    }
 }
 
 extension ReceiptViewController: UITableViewDelegate, UITableViewDataSource {
@@ -43,6 +48,10 @@ extension ReceiptViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
         return UITableViewCell()
+    }
+
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 60
     }
 }
 

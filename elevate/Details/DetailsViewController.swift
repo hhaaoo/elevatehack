@@ -30,15 +30,13 @@ class DetailsViewController: UIViewController {
         var mutableString: NSMutableAttributedString = NSMutableAttributedString(attributedString:
             NSAttributedString(string: "Store: "))
         mutableString.append(NSAttributedString(string: "\(item.shop.name)",
-            attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-                         NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: priceLabel.font.pointSize)]))
+            attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: priceLabel.font.pointSize)]))
         storeLabel.attributedText = mutableString
 
         mutableString = NSMutableAttributedString(attributedString:
         NSAttributedString(string: "Distance: "))
         mutableString.append(NSAttributedString(string: "\(item.shop.distance)km",
-        attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-        NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: distanceLabel.font.pointSize)]))
+        attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: distanceLabel.font.pointSize)]))
         distanceLabel.attributedText = mutableString
 
         productImageView.image = UIImage(named: item.imageName)
@@ -56,6 +54,8 @@ class DetailsViewController: UIViewController {
         descriptionLabel.text = item.description
         quantityTextField.text = "1"
         updateTotalPrice(Double(quantityTextField.text!))
+
+        addButton.layer.cornerRadius = 5
     }
 
     @IBAction func didPressAddButton() {
