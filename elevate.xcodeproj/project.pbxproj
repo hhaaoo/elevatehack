@@ -30,6 +30,8 @@
 		AD7D1E0A215713FA00D7E47C /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1E08215713FA00D7E47C /* ReceiptViewController.swift */; };
 		AD7D1E0B215713FA00D7E47C /* ReceiptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7D1E09215713FA00D7E47C /* ReceiptViewController.xib */; };
 		AD7D1E0D2157188A00D7E47C /* OrdersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1E0C2157188A00D7E47C /* OrdersManager.swift */; };
+		AD7D1E1021571F5D00D7E47C /* ReceiptTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1E0E21571F5D00D7E47C /* ReceiptTableViewCell.swift */; };
+		AD7D1E1121571F5D00D7E47C /* ReceiptTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7D1E0F21571F5D00D7E47C /* ReceiptTableViewCell.xib */; };
 		AD897AA02156A37B0008FD54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD897A9F2156A37B0008FD54 /* AppDelegate.swift */; };
 		AD897AA22156A37B0008FD54 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD897AA12156A37B0008FD54 /* RootTabBarController.swift */; };
 		AD897AA52156A37B0008FD54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD897AA32156A37B0008FD54 /* Main.storyboard */; };
@@ -64,6 +66,8 @@
 		AD7D1E08215713FA00D7E47C /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
 		AD7D1E09215713FA00D7E47C /* ReceiptViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiptViewController.xib; sourceTree = "<group>"; };
 		AD7D1E0C2157188A00D7E47C /* OrdersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersManager.swift; sourceTree = "<group>"; };
+		AD7D1E0E21571F5D00D7E47C /* ReceiptTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptTableViewCell.swift; sourceTree = "<group>"; };
+		AD7D1E0F21571F5D00D7E47C /* ReceiptTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiptTableViewCell.xib; sourceTree = "<group>"; };
 		AD897A9C2156A37B0008FD54 /* elevate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elevate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD897A9F2156A37B0008FD54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD897AA12156A37B0008FD54 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 			children = (
 				AD7D1E08215713FA00D7E47C /* ReceiptViewController.swift */,
 				AD7D1E09215713FA00D7E47C /* ReceiptViewController.xib */,
+				AD7D1E0E21571F5D00D7E47C /* ReceiptTableViewCell.swift */,
+				AD7D1E0F21571F5D00D7E47C /* ReceiptTableViewCell.xib */,
 				AD7D1DEC2156BB5C00D7E47C /* Receipt.swift */,
 			);
 			path = Receipt;
@@ -278,6 +284,7 @@
 				AD897AA72156A37B0008FD54 /* Assets.xcassets in Resources */,
 				AD13FB1B2156A43E004416D1 /* SettingsTableViewController.xib in Resources */,
 				05FA2C6D2156BE3E00879843 /* ReviewViewController.xib in Resources */,
+				AD7D1E1121571F5D00D7E47C /* ReceiptTableViewCell.xib in Resources */,
 				AD7D1DE62156B67000D7E47C /* OrdersTableViewController.xib in Resources */,
 				AD7D1E052156F85D00D7E47C /* DetailsViewController.xib in Resources */,
 				AD7D1DF62156D0DE00D7E47C /* SearchViewController.xib in Resources */,
@@ -338,6 +345,7 @@
 				AD7D1E072157055500D7E47C /* UIColor.swift in Sources */,
 				AD7D1DEA2156BAD600D7E47C /* Order.swift in Sources */,
 				AD7D1DE52156B67000D7E47C /* OrdersTableViewController.swift in Sources */,
+				AD7D1E1021571F5D00D7E47C /* ReceiptTableViewCell.swift in Sources */,
 				AD7D1DED2156BB5C00D7E47C /* Receipt.swift in Sources */,
 				AD897AA22156A37B0008FD54 /* RootTabBarController.swift in Sources */,
 				AD7D1DF92156D77200D7E47C /* Item.swift in Sources */,

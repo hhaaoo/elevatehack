@@ -16,8 +16,7 @@ class OrdersManager {
     var quantities = [Int]()
 
     func add(shop: Shop, item: Item, quantity: Int) {
-        if let shopId = self.shop?.shopId,
-            shopId != shop.shopId {
+        if self.shop?.shopId != shop.shopId {
             self.shop = shop
             items = [Item]()
             quantities = [Int]()
