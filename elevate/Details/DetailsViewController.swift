@@ -59,6 +59,8 @@ class DetailsViewController: UIViewController {
     }
 
     @IBAction func didPressAddButton() {
+        let quantity = Int(quantityTextField.text!) ?? 1
+        OrdersManager.shared.add(shop: item.shop, item: item, quantity: quantity)
         let receiptController = ReceiptViewController(nibName: String(describing: ReceiptViewController.self), bundle: nil)
         let navController = UINavigationController(rootViewController: receiptController)
         navController.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)

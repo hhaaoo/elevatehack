@@ -36,16 +36,12 @@ class OrdersManager {
         }
     }
 
-    func remove(shop: Shop, item: Item, quantity: Int) {
+    func remove(shop: Shop, item: Item) {
         if let shopId = self.shop?.shopId,
             shopId == shop.shopId,
             let index = items.index(where: {$0.itemId == item.itemId}) {
-            if quantity >= quantities[index] {
-                items.remove(at: index)
-                quantities.remove(at: index)
-            } else {
-                quantities[index] = quantities[index] - quantity
-            }
+            items.remove(at: index)
+            quantities.remove(at: index)
         }
     }
 }
