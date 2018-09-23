@@ -44,6 +44,12 @@ class OrdersManager {
         }
     }
 
+    func reset() {
+        shop = nil
+        items = [Item]()
+        quantities = [Int]()
+    }
+
     func total() -> Double {
         var total = 0.0
         for i in 0..<items.count {
