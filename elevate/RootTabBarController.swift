@@ -31,7 +31,6 @@ class RootTabBarController: UITabBarController, UITabBarControllerDelegate {
         homeNavController.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         homeNavController.navigationBar.shadowImage = UIImage()
         homeNavController.navigationBar.isTranslucent = true
-        homeNavController.view.backgroundColor = UIColor.clear
         homeNavController.navigationBar.backgroundColor = UIColor.clear
         homeNavController.tabBarItem = homeController?.tabBarItem
     }
@@ -45,7 +44,6 @@ class RootTabBarController: UITabBarController, UITabBarControllerDelegate {
         ordersNavController.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         ordersNavController.navigationBar.shadowImage = UIImage()
         ordersNavController.navigationBar.isTranslucent = true
-        ordersNavController.view.backgroundColor = UIColor.clear
         ordersNavController.navigationBar.backgroundColor = UIColor.clear
         ordersNavController.tabBarItem = ordersController.tabBarItem
     }
@@ -59,7 +57,6 @@ class RootTabBarController: UITabBarController, UITabBarControllerDelegate {
         settingsNavController.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         settingsNavController.navigationBar.shadowImage = UIImage()
         settingsNavController.navigationBar.isTranslucent = true
-        settingsNavController.view.backgroundColor = UIColor.clear
         settingsNavController.navigationBar.backgroundColor = UIColor.clear
         settingsNavController.tabBarItem = settingsController.tabBarItem
     }

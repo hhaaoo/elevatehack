@@ -27,25 +27,25 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DV4-QB-h6U">
-                        <rect key="frame" x="152" y="24" width="165" height="20.5"/>
+                        <rect key="frame" x="152" y="16" width="165" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xql-Re-748">
-                        <rect key="frame" x="152" y="52.5" width="165" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="152" y="36.5" width="165" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8P-R1-fg6">
-                        <rect key="frame" x="152" y="81" width="165" height="21"/>
+                        <rect key="frame" x="152" y="55" width="165" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIM-dB-fkf">
-                        <rect key="frame" x="152" y="110" width="165" height="21"/>
+                        <rect key="frame" x="152" y="84" width="165" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -53,15 +53,15 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="Xql-Re-748" secondAttribute="trailing" constant="16" id="2nq-T9-Nsl"/>
-                    <constraint firstItem="D8P-R1-fg6" firstAttribute="top" secondItem="Xql-Re-748" secondAttribute="bottom" constant="8" id="3gE-3t-pAc"/>
+                    <constraint firstItem="D8P-R1-fg6" firstAttribute="top" secondItem="Xql-Re-748" secondAttribute="bottom" constant="4" id="3gE-3t-pAc"/>
                     <constraint firstItem="MeX-xB-VXI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="8eG-SD-Vwf"/>
                     <constraint firstItem="MeX-xB-VXI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="AWj-FL-Z5X"/>
-                    <constraint firstItem="Xql-Re-748" firstAttribute="top" secondItem="DV4-QB-h6U" secondAttribute="bottom" constant="8" id="CcG-i8-8gL"/>
+                    <constraint firstItem="Xql-Re-748" firstAttribute="top" secondItem="DV4-QB-h6U" secondAttribute="bottom" id="CcG-i8-8gL"/>
                     <constraint firstItem="fIM-dB-fkf" firstAttribute="top" secondItem="D8P-R1-fg6" secondAttribute="bottom" constant="8" id="Oky-Tz-TRZ"/>
-                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fIM-dB-fkf" secondAttribute="bottom" constant="8" id="RNw-62-dPA"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fIM-dB-fkf" secondAttribute="bottom" constant="4" id="RNw-62-dPA"/>
                     <constraint firstItem="Xql-Re-748" firstAttribute="leading" secondItem="MeX-xB-VXI" secondAttribute="trailing" constant="16" id="TTm-W6-BZX"/>
                     <constraint firstItem="DV4-QB-h6U" firstAttribute="leading" secondItem="MeX-xB-VXI" secondAttribute="trailing" constant="16" id="Wzf-mx-vQN"/>
-                    <constraint firstItem="DV4-QB-h6U" firstAttribute="top" secondItem="MeX-xB-VXI" secondAttribute="top" constant="8" id="hRO-7n-B4w"/>
+                    <constraint firstItem="DV4-QB-h6U" firstAttribute="top" secondItem="MeX-xB-VXI" secondAttribute="top" id="hRO-7n-B4w"/>
                     <constraint firstItem="fIM-dB-fkf" firstAttribute="leading" secondItem="MeX-xB-VXI" secondAttribute="trailing" constant="16" id="kfp-A4-uSx"/>
                     <constraint firstAttribute="trailing" secondItem="D8P-R1-fg6" secondAttribute="trailing" constant="16" id="l6G-Ta-SGY"/>
                     <constraint firstAttribute="bottom" secondItem="MeX-xB-VXI" secondAttribute="bottom" constant="16" id="r1W-1s-9eu"/>
@@ -75,8 +75,8 @@
                 <outlet property="descriptionLabel" destination="Xql-Re-748" id="xq9-hc-Kh7"/>
                 <outlet property="distanceLabel" destination="fIM-dB-fkf" id="gkc-az-UGp"/>
                 <outlet property="nameLabel" destination="DV4-QB-h6U" id="ABZ-WG-fzE"/>
-                <outlet property="photoImageView" destination="MeX-xB-VXI" id="sJ1-1V-fbS"/>
                 <outlet property="priceLabel" destination="D8P-R1-fg6" id="ltQ-LE-6xi"/>
+                <outlet property="productImageView" destination="MeX-xB-VXI" id="SJT-hR-tPO"/>
             </connections>
             <point key="canvasLocation" x="25.5" y="129.5"/>
         </tableViewCell>

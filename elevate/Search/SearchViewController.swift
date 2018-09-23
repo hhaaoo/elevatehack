@@ -48,7 +48,7 @@ class SearchViewController: UIViewController {
 }
 
 extension SearchViewController: UITextFieldDelegate {
-    func textField(_ textFielod: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         var txtAfterUpdate: NSString = textField.text! as NSString
         txtAfterUpdate = txtAfterUpdate.replacingCharacters(in: range, with: string) as NSString
         visibleItems = allItems.filter { $0.name.lowercased().hasPrefix(txtAfterUpdate.lowercased)}
@@ -71,5 +71,12 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
         return UITableViewCell()
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        let detailsController = DetailsViewController(nibName: String(describing: DetailsViewController.self), bundle: nil)
+        detailsController.item = visibleItems[indexPath.row]
+        navigationController?.pushViewController(detailsController, animated: true)
     }
 }
