@@ -65,7 +65,7 @@ class CheckoutViewController: UIViewController {
             return
         }
         SVProgressHUD.show()
-        NetworkManager.shared.makeTransfer(amount: OrdersManager.shared.total()) { [weak self] (receipt, error) in
+        NetworkManager.shared.makeTransfer(amount: OrdersManager.shared.total(), fromAccountId: currentAccountId) { [weak self] (receipt, error) in
             SVProgressHUD.dismiss()
             if let error = error {
                 NSLog("Error: \(error.localizedDescription)")
