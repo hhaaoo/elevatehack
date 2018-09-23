@@ -44,8 +44,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var locationButton: UIButton!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var stackView: UIStackView!
-
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
 

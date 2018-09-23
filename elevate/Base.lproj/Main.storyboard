@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yh1-Hl-r0Z">
-                                <rect key="frame" x="0.0" y="155" width="414" height="446"/>
+                                <rect key="frame" x="0.0" y="155" width="414" height="581"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="gle-TI-I7V"/>
                                 </connections>
@@ -40,24 +40,6 @@
                                     <action selector="didPressSearch" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wd8-A5-44c"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="curve_up" translatesAutoresizingMaskIntoConstraints="NO" id="DRJ-RY-3Gw">
-                                <rect key="frame" x="0.0" y="556" width="414" height="180"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="p6f-Gu-BkG"/>
-                                </constraints>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9eZ-8B-GBG">
-                                <rect key="frame" x="0.0" y="636" width="414" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Ay0-sy-MII"/>
-                                </constraints>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover more shops" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAl-SO-hSq">
-                                <rect key="frame" x="126.66666666666669" y="595" width="161" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZx-ip-DkI">
                                 <rect key="frame" x="187" y="55" width="40" height="43"/>
                                 <state key="normal" image="directions-icon"/>
@@ -75,27 +57,19 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yh1-Hl-r0Z" secondAttribute="trailing" id="4JT-Hu-Zj5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9eZ-8B-GBG" secondAttribute="bottom" id="Cuj-Pn-zNM"/>
-                            <constraint firstItem="DRJ-RY-3Gw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DfD-lR-Amf"/>
                             <constraint firstItem="O0Z-pI-pJx" firstAttribute="top" secondItem="sZx-ip-DkI" secondAttribute="bottom" id="GwM-Kn-erU"/>
                             <constraint firstItem="e3h-l4-lNC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NJd-In-G6f"/>
-                            <constraint firstItem="9eZ-8B-GBG" firstAttribute="top" secondItem="RAl-SO-hSq" secondAttribute="bottom" constant="20" id="NVg-gD-049"/>
                             <constraint firstItem="sZx-ip-DkI" firstAttribute="top" secondItem="8YH-yE-GFt" secondAttribute="bottom" constant="5" id="P9s-IS-W1P"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DRJ-RY-3Gw" secondAttribute="trailing" id="W4i-88-4fs"/>
                             <constraint firstItem="yh1-Hl-r0Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xsx-5v-w0E"/>
                             <constraint firstItem="8YH-yE-GFt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dDp-rZ-kR2"/>
                             <constraint firstItem="sZx-ip-DkI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dzW-qM-Okj"/>
-                            <constraint firstItem="9eZ-8B-GBG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fhE-1c-YBw"/>
+                            <constraint firstAttribute="bottom" secondItem="yh1-Hl-r0Z" secondAttribute="bottom" id="fLN-RQ-CfH"/>
                             <constraint firstItem="e3h-l4-lNC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jPj-85-GkX"/>
                             <constraint firstItem="yh1-Hl-r0Z" firstAttribute="top" secondItem="e3h-l4-lNC" secondAttribute="bottom" constant="-45" id="kBC-yA-fgH"/>
                             <constraint firstItem="8YH-yE-GFt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="kl1-Is-9aT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9eZ-8B-GBG" secondAttribute="trailing" id="lXg-z7-wzE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DRJ-RY-3Gw" secondAttribute="bottom" id="mZS-8v-6Kh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8YH-yE-GFt" secondAttribute="trailing" constant="10" id="oG6-KO-P6z"/>
                             <constraint firstItem="O0Z-pI-pJx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rxH-CE-S9W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e3h-l4-lNC" secondAttribute="trailing" id="tAl-EH-ez9"/>
-                            <constraint firstItem="RAl-SO-hSq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wD6-bO-Fbt"/>
-                            <constraint firstItem="DRJ-RY-3Gw" firstAttribute="top" secondItem="yh1-Hl-r0Z" secondAttribute="bottom" constant="-45" id="xjv-rh-33E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -104,7 +78,6 @@
                         <outlet property="locationLabel" destination="O0Z-pI-pJx" id="m9r-SP-70Z"/>
                         <outlet property="mapView" destination="yh1-Hl-r0Z" id="gx1-KU-bYo"/>
                         <outlet property="searchButton" destination="8YH-yE-GFt" id="vpr-FX-GBp"/>
-                        <outlet property="stackView" destination="9eZ-8B-GBG" id="yhp-Xh-B9Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -114,7 +87,6 @@
     </scenes>
     <resources>
         <image name="curve" width="562" height="252"/>
-        <image name="curve_up" width="562" height="252"/>
         <image name="directions-icon" width="40" height="43"/>
     </resources>
 </document>
