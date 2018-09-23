@@ -26,7 +26,7 @@
 		AD7D1E002156E77000D7E47C /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7D1DFE2156E77000D7E47C /* SearchTableViewCell.xib */; };
 		AD7D1E042156F85D00D7E47C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1E022156F85D00D7E47C /* DetailsViewController.swift */; };
 		AD7D1E052156F85D00D7E47C /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7D1E032156F85D00D7E47C /* DetailsViewController.xib */; };
-		AD7D1E072157055500D7E47C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1E062157055500D7E47C /* UIColor.swift */; };
+		AD7D1E072157055500D7E47C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1E062157055500D7E47C /* Extensions.swift */; };
 		AD7D1E0A215713FA00D7E47C /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1E08215713FA00D7E47C /* ReceiptViewController.swift */; };
 		AD7D1E0B215713FA00D7E47C /* ReceiptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7D1E09215713FA00D7E47C /* ReceiptViewController.xib */; };
 		AD7D1E0D2157188A00D7E47C /* OrdersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1E0C2157188A00D7E47C /* OrdersManager.swift */; };
@@ -62,7 +62,7 @@
 		AD7D1DFE2156E77000D7E47C /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		AD7D1E022156F85D00D7E47C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		AD7D1E032156F85D00D7E47C /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
-		AD7D1E062157055500D7E47C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		AD7D1E062157055500D7E47C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AD7D1E08215713FA00D7E47C /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
 		AD7D1E09215713FA00D7E47C /* ReceiptViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiptViewController.xib; sourceTree = "<group>"; };
 		AD7D1E0C2157188A00D7E47C /* OrdersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersManager.swift; sourceTree = "<group>"; };
@@ -201,7 +201,7 @@
 			children = (
 				AD897A9F2156A37B0008FD54 /* AppDelegate.swift */,
 				AD897AA12156A37B0008FD54 /* RootTabBarController.swift */,
-				AD7D1E062157055500D7E47C /* UIColor.swift */,
+				AD7D1E062157055500D7E47C /* Extensions.swift */,
 				0584B4862156A5F800F97F6C /* MainViewController.swift */,
 				AD897AA32156A37B0008FD54 /* Main.storyboard */,
 				AD7D1E0C2157188A00D7E47C /* OrdersManager.swift */,
@@ -342,7 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD7D1DF52156D0DE00D7E47C /* SearchViewController.swift in Sources */,
-				AD7D1E072157055500D7E47C /* UIColor.swift in Sources */,
+				AD7D1E072157055500D7E47C /* Extensions.swift in Sources */,
 				AD7D1DEA2156BAD600D7E47C /* Order.swift in Sources */,
 				AD7D1DE52156B67000D7E47C /* OrdersTableViewController.swift in Sources */,
 				AD7D1E1021571F5D00D7E47C /* ReceiptTableViewCell.swift in Sources */,

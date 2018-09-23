@@ -40,13 +40,7 @@ class DetailsViewController: UIViewController {
         distanceLabel.attributedText = mutableString
 
         productImageView.image = UIImage(named: item.imageName)
-        productImageView.layer.cornerRadius = 5.0
-        productImageView.contentMode = .scaleAspectFit
-        productImageView.layer.shadowColor = UIColor.black.cgColor
-        productImageView.layer.shadowRadius = 5.0
-        productImageView.layer.masksToBounds = false
-        productImageView.layer.shadowOffset = CGSize(width: 1, height: 1)
-        productImageView.layer.shadowOpacity = 0.5
+        productImageView.setupDefault()
 
         priceLabel.text = "$\(item.price)"
 

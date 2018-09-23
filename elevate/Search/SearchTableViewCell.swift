@@ -20,7 +20,7 @@ class SearchTableViewCell: UITableViewCell {
 
     func configure(for item: Item) {
         productImageView.image = UIImage.init(named: item.imageName)
-        productImageView.contentMode = .scaleAspectFit
+        productImageView.setupDefault()
         nameLabel.text = item.name
         descriptionLabel.text = item.description
         var mutableString: NSMutableAttributedString = NSMutableAttributedString(attributedString:

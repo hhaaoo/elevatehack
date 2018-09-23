@@ -31,19 +31,12 @@ class ReceiptTableViewCell: UITableViewCell {
         super.awakeFromNib()
         quantityTextField.delegate = self
         deleteButton.layer.cornerRadius = 5.0
-        productImageView.layer.cornerRadius = 5.0
-        productImageView.contentMode = .scaleAspectFit
-        productImageView.layer.shadowColor = UIColor.black.cgColor
-        productImageView.layer.shadowRadius = 5.0
-        productImageView.layer.masksToBounds = false
-        productImageView.layer.shadowOffset = CGSize(width: 1, height: 1)
-        productImageView.layer.shadowOpacity = 0.5
+        productImageView.setupDefault()
     }
 
     func configure(for item: Item, quantity: Int) {
         self.item = item
         productImageView.image = UIImage.init(named: item.imageName)
-        productImageView.contentMode = .scaleAspectFit
         nameLabel.text = item.name
         descriptionLabel.text = item.description
         updateTotalPrice(Double(quantity))
