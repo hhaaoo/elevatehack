@@ -29,6 +29,7 @@
 		AD7D1E072157055500D7E47C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1E062157055500D7E47C /* UIColor.swift */; };
 		AD7D1E0A215713FA00D7E47C /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1E08215713FA00D7E47C /* ReceiptViewController.swift */; };
 		AD7D1E0B215713FA00D7E47C /* ReceiptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7D1E09215713FA00D7E47C /* ReceiptViewController.xib */; };
+		AD7D1E0D2157188A00D7E47C /* OrdersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1E0C2157188A00D7E47C /* OrdersManager.swift */; };
 		AD897AA02156A37B0008FD54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD897A9F2156A37B0008FD54 /* AppDelegate.swift */; };
 		AD897AA22156A37B0008FD54 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD897AA12156A37B0008FD54 /* RootTabBarController.swift */; };
 		AD897AA52156A37B0008FD54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD897AA32156A37B0008FD54 /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		AD7D1E062157055500D7E47C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		AD7D1E08215713FA00D7E47C /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
 		AD7D1E09215713FA00D7E47C /* ReceiptViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiptViewController.xib; sourceTree = "<group>"; };
+		AD7D1E0C2157188A00D7E47C /* OrdersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersManager.swift; sourceTree = "<group>"; };
 		AD897A9C2156A37B0008FD54 /* elevate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elevate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD897A9F2156A37B0008FD54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD897AA12156A37B0008FD54 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				AD7D1E062157055500D7E47C /* UIColor.swift */,
 				0584B4862156A5F800F97F6C /* MainViewController.swift */,
 				AD897AA32156A37B0008FD54 /* Main.storyboard */,
+				AD7D1E0C2157188A00D7E47C /* OrdersManager.swift */,
 				AD7D1E012156F83700D7E47C /* Details */,
 				AD7D1DF72156D0E200D7E47C /* Search */,
 				AD7D1DE72156BA5400D7E47C /* Orders */,
@@ -344,6 +347,7 @@
 				0584B4872156A5F800F97F6C /* MainViewController.swift in Sources */,
 				AD7D1E0A215713FA00D7E47C /* ReceiptViewController.swift in Sources */,
 				AD7D1E042156F85D00D7E47C /* DetailsViewController.swift in Sources */,
+				AD7D1E0D2157188A00D7E47C /* OrdersManager.swift in Sources */,
 				05FA2C6C2156BE3E00879843 /* ReviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
