@@ -19,7 +19,11 @@ class SearchTableViewCell: UITableViewCell {
     @IBOutlet var distanceLabel: UILabel!
 
     func configure(for item: Item) {
-        productImageView.image = UIImage.init(named: item.imageName)
+        if let image = UIImage(named: item.imageName) {
+            productImageView.image = image
+        } else if let image = UIImage(named: "no-image") {
+            productImageView.image = image
+        }
         productImageView.setupDefault()
         nameLabel.text = item.name
         descriptionLabel.text = item.description

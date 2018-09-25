@@ -36,7 +36,11 @@ class ReceiptTableViewCell: UITableViewCell {
 
     func configure(for item: Item, quantity: Int) {
         self.item = item
-        productImageView.image = UIImage.init(named: item.imageName)
+        if let image = UIImage(named: item.imageName) {
+            productImageView.image = image
+        } else if let image = UIImage(named: "no-image") {
+            productImageView.image = image
+        }
         nameLabel.text = item.name
         descriptionLabel.text = item.description
         updateTotalPrice(Double(quantity))

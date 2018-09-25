@@ -7,7 +7,7 @@
 			"price": 1.99,
             "shop": {
               "shopId": "000",
-              "name": "Shop",
+              "name": "Joe's Convenience Store",
               "distance": 0.1
             }
 		},
@@ -18,28 +18,28 @@
               "price": 2.99,
               "shop": {
               "shopId": "000",
-              "name": "Shop",
+              "name": "Betty's Flower Shop",
               "distance": 0.4
               }
 		},
 		{
 			"id": "002",
-			"image": "002",
-			"name": "Charmin Tissue Paper 24 ct",
-              "price": 1.99,
+			"image": "pp1",
+			"name": "Royale Toilet Paper 24 ct",
+              "price": 12.99,
               "shop": {
               "shopId": "000",
-              "name": "Shop",
+              "name": "Betty & Joe's Corner Store",
               "distance": 0.23
               }
 		},
 		{
 			"id": "003",
-			"image": "003",
-			"name": "Charmin Tissue Paper 32 ct",
-              "price": 1.99,
+			"image": "pp2",
+			"name": "Royale Toilet Paper 12 ct",
+              "price": 5.99,
               "shop": {
-              "shopId": "000",
+              "shopId": "Mom and Pop's Groceries",
               "name": "Shop",
               "distance": 1.5
               }
@@ -48,7 +48,7 @@
 			"id": "004",
 			"image": "tp3",
 			"name": "Toothpaste",
-              "price": 1.99,
+              "price": 0.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
@@ -59,7 +59,7 @@
 			"id": "005",
 			"image": "tp4",
 			"name": "Toothpaste",
-              "price": 1.99,
+              "price": 1.49,
               "shop": {
               "shopId": "000",
               "name": "Shop",
@@ -70,7 +70,7 @@
 			"id": "006",
 			"image": "tp5",
 			"name": "Toothpaste",
-              "price": 1.99,
+              "price": 0.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
@@ -79,9 +79,9 @@
 		},
 		{
 			"id": "007",
-			"image": "tp6",
-			"name": "Toothpaste",
-              "price": 1.99,
+			"image": "pp3",
+			"name": "Toilet Paper",
+              "price": 7.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
@@ -112,8 +112,8 @@
 		},
 		{
 			"id": "010",
-			"image": "010",
-			"name": "tp9",
+			"image": "tp9",
+			"name": "Toothpaste",
               "price": 1.99,
               "shop": {
               "shopId": "000",
@@ -189,8 +189,8 @@
 		},
 		{
 			"id": "017",
-			"image": "017",
-			"name": "Toothpaste",
+			"image": "pp6",
+			"name": "Toilet Paper",
               "price": 1.99,
               "shop": {
               "shopId": "000",
@@ -200,9 +200,9 @@
 		},
 		{
 			"id": "018",
-			"image": "018",
-			"name": "Toothpaste",
-              "price": 1.99,
+			"image": "pp5",
+			"name": "Toilet Paper",
+              "price": 7.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",
@@ -211,9 +211,9 @@
 		},
 		{
 			"id": "019",
-			"image": "019",
-			"name": "Toothpaste",
-              "price": 1.99,
+			"image": "pp4",
+			"name": "Toilet Paper",
+              "price": 8.99,
               "shop": {
               "shopId": "000",
               "name": "Shop",

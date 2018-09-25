@@ -22,6 +22,7 @@ class SearchViewController: UIViewController {
         textField.delegate = self
         tableView.contentInset = UIEdgeInsetsMake(45, 0, 0, 0)
         tableView.tableFooterView = UIView()
+        tableView.keyboardDismissMode = .onDrag
 
         if let filepath = Bundle.main.path(forResource: "Items", ofType: "json") {
             do {

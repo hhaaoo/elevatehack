@@ -39,7 +39,12 @@ class DetailsViewController: UIViewController {
         attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: distanceLabel.font.pointSize)]))
         distanceLabel.attributedText = mutableString
 
-        productImageView.image = UIImage(named: item.imageName)
+        if let image = UIImage(named: item.imageName) {
+            productImageView.image = image
+        } else if let image = UIImage(named: "no-image") {
+            productImageView.image = image
+        }
+
         productImageView.setupDefault()
 
         priceLabel.text = "$\(item.price)"

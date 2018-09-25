@@ -1,6 +1,8 @@
 struct Order: Codable {
     var orderId: Int
-    var name: String
-    var price: Double
-    var quantity: Int
+    var totalPrice: Double
+    var shop: Shop
+    var orderDate: String
+    var completeDate: String?
+    var status: String
 }

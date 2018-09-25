@@ -44,7 +44,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var locationButton: UIButton!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
- 
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -81,6 +81,9 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
         // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
 
+        mapView.showsUserLocation = true
+        mapView.delegate = self
+
         searchButton.layer.cornerRadius = 5
     }
     
@@ -105,7 +108,10 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     @IBAction func didPressLocation() {
-        NSLog("HERE")
+        let center = CLLocationCoordinate2D(latitude: mapView.userLocation.coordinate.latitude, longitude: mapView.userLocation.coordinate.longitude)
+        var region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
+        region.center = mapView.userLocation.coordinate
+        mapView.setRegion(region, animated: true)
     }
 }
 

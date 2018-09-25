@@ -13,6 +13,7 @@
 		39B7C8973F65DDAAA9700132 /* Pods_elevate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222F878C1C33BC4655E881EA /* Pods_elevate.framework */; };
 		AD13FB1A2156A43E004416D1 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD13FB182156A43E004416D1 /* SettingsTableViewController.swift */; };
 		AD13FB1B2156A43E004416D1 /* SettingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD13FB192156A43E004416D1 /* SettingsTableViewController.xib */; };
+		AD21398D2157E5BE00BF52FE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD21398C2157E5BE00BF52FE /* CoreLocation.framework */; };
 		AD7D1DE22156A4D700D7E47C /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7D1DE12156A4D700D7E47C /* SVProgressHUD.framework */; };
 		AD7D1DE52156B67000D7E47C /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7D1DE32156B67000D7E47C /* OrdersTableViewController.swift */; };
 		AD7D1DE62156B67000D7E47C /* OrdersTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7D1DE42156B67000D7E47C /* OrdersTableViewController.xib */; };
@@ -53,6 +54,7 @@
 		A32354059B554FA0AA615103 /* Pods-elevate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elevate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-elevate/Pods-elevate.debug.xcconfig"; sourceTree = "<group>"; };
 		AD13FB182156A43E004416D1 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		AD13FB192156A43E004416D1 /* SettingsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewController.xib; sourceTree = "<group>"; };
+		AD21398C2157E5BE00BF52FE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AD7D1DDF2156A4D700D7E47C /* MMDrawerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MMDrawerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD7D1DE12156A4D700D7E47C /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD7D1DE32156B67000D7E47C /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD21398D2157E5BE00BF52FE /* CoreLocation.framework in Frameworks */,
 				AD7D1DE22156A4D700D7E47C /* SVProgressHUD.framework in Frameworks */,
 				39B7C8973F65DDAAA9700132 /* Pods_elevate.framework in Frameworks */,
 			);
@@ -112,6 +115,7 @@
 		42127A8A3DE62F24B5338D9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AD21398C2157E5BE00BF52FE /* CoreLocation.framework */,
 				AD7D1DDF2156A4D700D7E47C /* MMDrawerController.framework */,
 				AD7D1DE12156A4D700D7E47C /* SVProgressHUD.framework */,
 				222F878C1C33BC4655E881EA /* Pods_elevate.framework */,
